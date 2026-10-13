@@ -42,3 +42,12 @@ output [{
 dynamic_batching {
   preferred_batch_size: [16, 32]
 }
+model_repository_agents {
+  agents [{
+    name: "checksum"
+    parameters {
+      key: "MD5:1/model.onnx"
+      value: "ebef146f737ef13e2e8e692f0069be27"
+    }
+  }]
+}
